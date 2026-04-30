@@ -1,106 +1,106 @@
 /* VARIABLES */
-/* capturar elementos DOM */
-const imagenBanner = document.querySelector('#bienvenidos img')
-/* Acceder al elemento del DOM para crear los artículos de viajes */
+/* capture DOM elements */
+const bannerImage = document.querySelector('#welcome img')
+/* access the DOM element to create travel articles */
 
 
-/* Acceder al elemento del DOM para crear añadir los options */
+/* access the DOM element to create and add options */
 
-const arrayBanners = [
+const banners = [
     {
         id: 1,
         src: 'assets/banner/1.jpg',
-        alt: 'Banner uno'
+        alt: 'Banner one'
     },
     {
         id: 2,
         src: 'assets/banner/2.jpg',
-        alt: 'Banner uno'
+        alt: 'Banner one'
     },
     {
         id: 3,
         src: 'assets/banner/3.jpg',
-        alt: 'Banner uno'
+        alt: 'Banner one'
     },
     {
         id: 4,
         src: 'assets/banner/4.jpg',
-        alt: 'Banner uno'
+        alt: 'Banner one'
     },
     {
         id: 5,
         src: 'assets/banner/5.jpg',
-        alt: 'Banner uno'
+        alt: 'Banner one'
     },
     {
         id: 6,
         src: 'assets/banner/6.jpg',
-        alt: 'Banner uno'
+        alt: 'Banner one'
     },
     {
         id: 7,
         src: 'assets/banner/7.jpg',
-        alt: 'Banner uno'
+        alt: 'Banner one'
     },
     {
         id: 8,
         src: 'assets/banner/8.jpg',
-        alt: 'Banner uno'
+        alt: 'Banner one'
     },
 ]
-const arrayViajes = {
+const trips = {
 
 }
-const arrayDestinos = {}
+const destinations = {}
 
 
 /* EVENTOS */
 
 /* FUNCIONES */
-const aleatorio = () => {
-    const indice = '********'
-    return indice
+const randomIndex = () => {
+    const index = '********'
+    return index
 }
 
-const pintarBanner = () => {
+const renderBanner = () => {
 
-    const indice = aleatorio()
-    const elemento = arrayBanners[0]
+    const index = randomIndex()
+    const element = banners[0]
 
-    // console.log(elemento.alt)
-    // console.log(elemento.src)
+    // console.log(element.alt)
+    // console.log(element.src)
 
-    imagenBanner.setAttribute('src', elemento.src)
-    imagenBanner.alt = elemento.alt
-    // console.log(imagenBanner)
+    bannerImage.setAttribute('src', element.src)
+    bannerImage.alt = element.alt
+    // console.log(bannerImage)
 
 }
 
-const pintarCards = {
-    /* recorrer los elementos del array/*
-    /* por cada elemento crear:/*
+const renderCards = {
+    /* iterate over the array elements/*
+    /* for each element create:/*
     /* un article   */
     /* un div   */
-    /* una imgen asignando sus atributos   */
-    /* un h3 asignar su valor   */
-    /* un p asignar su valor   */
+    /* an image assigning its attributes   */
+    /* an h3 assigning its value   */
+    /* a p assigning its value   */
 
-    /* meter la imagen en el div */
-    /* meter el div en el artigle */
-    /* meter el h3 y el p en el article */
+    /* put the image inside the div */
+    /* put the div inside the article */
+    /* put the h3 and p inside the article */
 
-    /* añadir el artícle fragmento */
-    /* dejo de recorrer el array */
+    /* add the article to the fragment */
+    /* finish iterating through the array */
 
-    /* añadir el fragmento al div flexContainer */
-
-}
-const pintarDestinos = {
+    /* add the fragment to the flexContainer div */
 
 }
+const renderDestinations = {
+
+}
 
 
 
-/* INVOCACIÓN A LAS FUNCIONES */
-pintarBanner()
-// pintarCards()
+/* FUNCTION INVOCATION */
+renderBanner()
+// renderCards()
